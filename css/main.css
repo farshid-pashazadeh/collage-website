@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.d-f {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+#header-section {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../assets/eduford_img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 30px 40px;
+}
+
+#header-section .logo #logo-icone {
+    margin-right: 10px;
+    color: #dc143c !important;
+}
+
+#header-section .logo {
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: inherit;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+#header-section .logo:hover {
+    letter-spacing: 7px;
+    color: #dc143c;
+}
+
+#header-section .logo:hover i {
+    text-shadow: none;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu .menu-items {
+    margin-right: 28px;
+    color: #fff;
+}
+
+.menu .menu-items:last-child {
+    margin-right: unset;
+}
+
+.menu-items {
+    color: #fff;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.menu-items:hover {
+    color: #dc143c;
+}
+
+.menu-items::after {
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #dc143c;
+    margin: auto;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.menu-items:hover::after {
+    width: 100%;
+}
