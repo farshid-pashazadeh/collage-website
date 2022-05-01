@@ -15,6 +15,7 @@ a {
 ::selection {
     background-color: #dc143c;
 }
+
 .container {
     max-width: 100%;
     padding: 20px;
@@ -70,16 +71,6 @@ a {
 
 .menu {
     display: flex;
-    list-style-type: none;
-}
-
-.menu .menu-items {
-    margin-right: 28px;
-    color: #fff;
-}
-
-.menu .menu-items:last-child {
-    margin-right: unset;
 }
 
 .menu-items {
@@ -89,7 +80,13 @@ a {
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    margin-right: 28px;
 }
+
+.menu-items:last-child {
+    margin-right: unset;
+}
+
 .menu-items:hover {
     color: #dc143c;
 }
@@ -112,6 +109,10 @@ a {
     width: 100%;
 }
 
+#header-section .menu-container .fa-solid {
+    display: none;
+}
+
 #header-section .text-box {
     width: 90%;
     text-align: center;
@@ -119,11 +120,11 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 #header-section .text-box .title {
@@ -156,6 +157,23 @@ a {
     border-color: #dc143c;
 }
 
-@media screen (max-width: 992px) {
-    
+/* ---------- media screen for medium devices ---------- */
+/* ---------- only header-section styling ---------- */
+
+@media screen and (max-width: 992px) {
+
+    #header-section .logo {
+        margin-bottom: 20px;
+    }
+
+    .d-f-col {
+        flex-direction: column;
+    }
+
+    .menu.jc-c {
+        justify-content: center;
+    }
 }
+
+/* ---------- media screen for small devices ---------- */
+/* ---------- only header-section styling ---------- */
