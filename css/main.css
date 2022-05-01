@@ -7,11 +7,15 @@
 html {}
 
 body {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+::selection {
+    background-color: #dc143c;
 }
 
 .container {
@@ -109,4 +113,48 @@ a {
 
 .menu-items:hover::after {
     width: 100%;
+}
+
+#header-section .text-box {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+#header-section .text-box .title {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#header-section .text-box .text {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0px 40px;
+}
+
+#header-section .text-box .hero-btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 400;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+#header-section .text-box .hero-btn:hover {
+    background-color: #dc143c;
+    border-color: #dc143c;
 }
