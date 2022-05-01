@@ -155,3 +155,7 @@ a {
     background-color: #dc143c;
     border-color: #dc143c;
 }
+
+@media screen (max-width: 992px) {
+    
+}
