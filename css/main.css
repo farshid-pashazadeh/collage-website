@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-html {}
-
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -17,7 +15,6 @@ a {
 ::selection {
     background-color: #dc143c;
 }
-
 .container {
     max-width: 100%;
     padding: 20px;
