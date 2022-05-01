@@ -109,7 +109,7 @@ a {
     width: 100%;
 }
 
-#header-section .menu-container .fa-solid {
+#header-section .navbar .d-none {
     display: none;
 }
 
@@ -177,3 +177,77 @@ a {
 
 /* ---------- media screen for small devices ---------- */
 /* ---------- only header-section styling ---------- */
+
+@media screen and (max-width: 576px) {
+
+    *:hover {
+        all:unset;
+    }
+
+    #header-section {
+        padding: 30px 20px;
+    }
+
+    #header-section .logo {
+        margin-bottom: unset;
+        font-size: 24px;
+    }
+
+    .ai-c {
+        align-items: unset;
+    }
+
+    .menu.fd-col {
+        flex-direction: column;
+    }
+
+    .s-menu {
+        width: 200px;
+        height: 100vh;
+        background-color: #dc143c;
+        position: absolute;
+        top: 0px;
+        right: -200px;
+        z-index: +2;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    #header-section .navbar .d-none {
+        display: inline-block;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    nav.d-f {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-items {
+        margin-right: unset;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+    /* .menu-items:first-child::before {
+        content: '';
+        display: block;
+        margin-top: 10px;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+    } */
+
+    #header-section .text-box .title {
+        font-size: 24px;
+    }
+
+    #header-section .text-box .text {
+        font-size: 14px;
+    }
+}
